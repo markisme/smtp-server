@@ -44,7 +44,7 @@ export interface SMTPServerOptions {
     onConnect?: (session: Session, callback: (err?: Error | null) => any) => any;
     onMailFrom?: (address: Address, session: Session, callback: (err?: Error | null) => any) => any;
     onRcptTo?: (address: Address, session: Session, callback: (err?: Error | null) => any) => any;
-    onData?: (stream: any, session: Session, callback: (err?: Error | null) => any) => any;
+    onData?: (stream: Stream, session: Session, callback: (err?: Error | null) => any) => any;
     onClose?: (session: Session) => any;
 }
 
