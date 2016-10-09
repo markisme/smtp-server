@@ -19,6 +19,9 @@ export class SMTPServer {
 
 export interface SMTPServerOptions {
     secure?: boolean; //default is false.
+    key?: Buffer;
+    cert?: Buffer;
+    ca?: Buffer;
     name?: string;//optional hostname of the server.
     banner?: string;//optional greeting message.
     size?: number;
