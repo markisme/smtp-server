@@ -1,29 +1,20 @@
 {
   "name":"@types/smtp-server",
   "version":"1.0.1",
-  "description": "TypeScript typings for smtp-server",
+  "description": "TypeScript Definition for smtp-server",
   "scripts": {
-    "build": "echo building... && typings bundle -o out/lib/smtp-server.d.ts",
-    "lint": "echo linting... && tslint \"**/*.ts\" -e \"source/**\" -e \"source-test/**\" -e \"out/**\" -e \"node_modules/**\" -e \"typings/**\"",
-    "browser-test": "echo running browser tests... && echo no browser test",
-    "source-test": "echo running source tests... &&  echo no source test",
-    "test": "echo running server tests... && cd test && ts-node ../node_modules/blue-tape/bin/blue-tape \"**/*.ts\" | tap-spec",
-    "watch": "onchange -w \"**/*.ts\" -i -e \"out/**\" -- npm -s run build+test",
-    "publish": "npm -s run lint+build+test && echo please publish to typings/registry",
-    "all-tests": "npm test",
-    "build+test": "npm run build && npm run all-tests",
-    "lint+build+test": "npm run lint && npm run build+test",
-    "prepublish": "typings install"
+    "test": "echo running server tests... && tsc ./test/test.ts"
   },
   "dependencies": {
     "typed-stream": "^1.0.1",
     "smtp-server": "1.15.0"
   },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markisme/smtp-server.git"
+  },
   "devDependencies": {
-    "blue-tape": "^1.0.0",
-    "onchange": "^3.0.2",
-    "smtp-server": "1.15.0",
-    "typings": "^1.4.0",
-    "typed-stream": "^1.0.1"
+    "smtp-server": "1.15.0"
   }
 }
