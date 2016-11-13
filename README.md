@@ -14,5 +14,5 @@ MIT
 # Fork this repo, then
 npm install
 ```
-
+then do something...
 ---
