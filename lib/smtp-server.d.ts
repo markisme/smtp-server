@@ -81,9 +81,9 @@ export interface Envelope {
 export interface Address {
     address: string;
     args: {
-        'SIZE'?:number,
-        'RET'?:string,
-        'NOTIFY'?:string
+        'SIZE'?: number,
+        'RET'?: string,
+        'NOTIFY'?: string
     };
 }
 

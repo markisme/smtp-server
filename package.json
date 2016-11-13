@@ -1,6 +1,6 @@
 {
-  "name":"@types/smtp-server",
-  "version":"1.0.1",
+  "name": "@types/smtp-server",
+  "version": "1.0.1",
   "description": "TypeScript Definition for smtp-server",
   "scripts": {
     "test": "echo running server tests... && tsc ./test/test.ts"
