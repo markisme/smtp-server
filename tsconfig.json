@@ -1,7 +1,8 @@
 {
     "files": [
-        "index.d.ts",
-        "./test/test.ts"
+        "./lib/smtp-server.d.ts",
+        "./test/test.ts",
+        "index.d.ts"
     ],
     "compilerOptions": {
         "module": "commonjs",
